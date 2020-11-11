@@ -1,0 +1,95 @@
+@import "mixin/mixins" ;
+* { 
+    margin: 0;
+    padding: 0;
+}
+body{  
+    header{ 
+        .top {
+            height: 400px;
+            background-image: url("../images/mountain.jpg");
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .text {
+                margin-top: 2rem;
+                cursor: pointer;
+                margin: auto;
+                margin-top: 0.8rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                word-spacing: normal;
+                transition: 00.3s;
+                &:hover{ 
+                    border-bottom: 1px solid;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+.susa {  margin: auto;
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.1rem;
+}
+
+main{ background-color: rgb(219, 236, 241);
+    .about {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+    }
+    .sekil { margin: auto;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .new{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 3rem;
+        margin-left: 4rem;
+        margin-right: 6rem;
+        iframe {
+            margin-bottom: 1rem;
+        }
+    }
+}
+ footer{ 
+      background-color: rgb(226, 218, 218);
+    background-size: cover;
+    cursor: pointer;
+      width: 100%; 
+      margin: auto;
+      display: flex;
+      justify-content: start;
+     
+     
+  
+  .last { 
+      margin-left: 3rem;
+      ul { @include section ;
+       
+      }
+    }
+.end{  margin-left: 1.3rem;
+     ul{
+         @include section ;
+          li{ margin-top: 0.2rem; }
+       
+ }
+  }
+ 
+}
+ }
